@@ -4,7 +4,9 @@ import { RandomDogAPI } from "./api/RandomDogAPI";
 
 export const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState(
+    "https://random.dog/749579d7-90a6-4214-a360-9fe7ab1d02b3.jpg",
+  );
 
   async function fetchRandomDogImage() {
     setIsLoading(true);
